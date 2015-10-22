@@ -2,24 +2,40 @@
 <html>
 <head>
 	<title>Listo</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,100,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
+	<header class="nav">
+		<div class="nav-text-container">
+			<h1> // &nbsp;  Listo &nbsp; //</h1>
+			<h5>The Way to Get Stuff Done</h5>
+		</div>
+	</header>
+	
 	<div class="new-item-header">
-		<button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+		<div href="#" class="new-button pull-right pencil" id="newListItem" style="">
+			<h4>Add New Task</h4>
+		</div>
 	</div>
+	
+	<form class="form-container" id="newTaskForm">
+		<input class="enter-new-item" id="newItemInput" type="text" placeholder="What is your new task?">
+		</input>
+		<div class="buttons-holder">
+			<div class="button" id="saveNewItem">
+				<h6>Save</h6>
+			</div>
+			<div class="button" id="cancel">
+				<h6>Cancel</h6>
+			</div>
+		</div>
+	</form>
 	
 	<div id="newList">
-		New List
+		New
 	</div>
-	
-	<form id="newTaskForm">
-		<label>New Item</label>
-		<input id="newItemInput" placeholder="New Task">
-		<button id="saveNewItem">Save</button>
-		<button id="cancel">Cancel</button>
-	</form>
 	
 	<div class="panel">
 		In Progress
