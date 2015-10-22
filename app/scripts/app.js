@@ -59,7 +59,7 @@ $(document).ready(function(){
 			listo.push(task);
 			
 			$('#newItemInput').val('');
-			$('#newList').append('<a href="#" class="" id="item"><li class="list-group-item">' + task.task + '<span class="arrow pull-right"><i class="glyphicon glyphicon-arrow-right"></span></li></a>');
+			$('#newList').append('<a href="#" class="item-text" id="item"><li class="list-group-item">' + task.task + '<span class="arrow pull-right"><i class="glyphicon glyphicon-arrow-right"></span></li></a>');
 		}
 		$('#newTaskForm,  #newListItem').fadeToggle('fast', 'linear');
 	};
