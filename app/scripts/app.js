@@ -79,7 +79,7 @@ $(document).ready(function(){
 	// Closes
 	$('#cancel').on('click', function(e){
 		e.preventDefault();
-		$('#newTaskForm', '#newListItem').fadeToggle('fast', 'linear');
+		$('#newTaskForm, #newListItem').fadeToggle('fast', 'linear');
 	});
 	
 
